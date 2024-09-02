@@ -1,0 +1,78 @@
+/*
+in media query breakpoints use em not rem,
+because rem has a bugs in some browsers.
+
+1em = 1rem = 16px.
+*/
+
+/**************************/
+/* Smaller Desktop */
+/**************************/
+
+/* 1344px = 84em -> 1344 / 16 = 84 */
+@media(max-width:84em) {
+    .hero {
+        max-width: 120rem;
+    }
+    
+    .heading-primary {
+        font-size: 4.4rem;
+    }
+    
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 1200px = 75em -> 1200 / 16 = 75 */
+@media (max-width: 75em) {
+    html {
+      /* 9px / 16px  */
+      font-size: 56.25%;
+    }
+  
+    .grid {
+      column-gap: 4.8rem;
+      row-gap: 6.4rem;
+    }
+  
+    .heading-secondary {
+      font-size: 3.6rem;
+    }
+  
+    .heading-tertiary {
+      font-size: 2.4rem;
+    }
+  
+    .header {
+      padding: 0 3.2rem;
+    }
+  
+    .main-nav-list {
+      gap: 3.2rem;
+    }
+  
+    .hero {
+      gap: 4.8rem;
+    }
+  
+    .testimonials-container {
+      padding: 9.6rem 3.2rem;
+    }
+  }
+
+
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 /
+36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
